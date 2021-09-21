@@ -4,22 +4,22 @@ using namespace std;
 
 int main() {
 	
-	int n, maks = 0, kolko, x;
+	int n, m = 0, o, x;
 	
 	cin >> n;
 	
 	for( int i=0; i<n; i++ ) {
 		cin >> x;
 		
-		if( x > maks ) {
-			maks = x; 
-			kolko = 1;
+		if( x > m ) {
+			m = x; 
+			o = 1;
 		}
-		else if( x == maks )
-			kolko++;
+		else if( x == m )
+			o++;
 	}
 	
-	cout << kolko;
+	cout << o;
 	
 	
 	return 0;

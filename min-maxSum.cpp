@@ -1,6 +1,5 @@
 #include <algorithm>
 #include <string.h>
-#include <vector>
 #include <cstdio>
 #include <climits>
 #include <iostream>
@@ -11,7 +10,6 @@ lld arr[6], N = 5;
 
 int main ()
 {
-    //freopen("input.txt", "r", stdin);
 
     lld allsum = 0;
     lld MN = LLONG_MAX, MX = LLONG_MIN;
