@@ -1,13 +1,11 @@
 #include <cmath>
 #include <cstdio>
-#include <vector>
 #include <iostream>
 #include <algorithm>
 using namespace std;
 
 
-int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+int main() {   
     int matrix[100][100];
     int i;
     cin>>i;
@@ -16,18 +14,18 @@ int main() {
             cin>>matrix[x][y];
         }
     }
-   int diag1,diag2;
-diag1=0;diag2=0;
+   int a,b;
+a=0;b=0;
     for(int x=0;x<i;x++)
         {
-        diag1=diag1+matrix[x][x];
+        a=a+matrix[x][x];
     }
     for(int x=i-1;x>-1;x--)
         {
        
-        diag2=(diag2+matrix[i-x-1][x]);   
+        b=(b+matrix[i-x-1][x]);   
     }
-    int diff = diag1-diag2;
+    int diff = a-b;
     if(diff<0){
         cout<<-(diff);
     }
