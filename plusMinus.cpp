@@ -1,20 +1,19 @@
 #include <cmath>
 #include <cstdio>
-#include <vector>
 #include <iostream>
 #include <algorithm>
 using namespace std;
 
 
 int main() {
-    int N, n, total;
+    int a, n, total;
     float pos = 0., neg = 0., zer = 0.;
     
-    cin >> N;
+    cin >> a;
     
-    total = N;
+    total = a;
     
-    while (N--) {
+    while (a--) {
         cin >> n;
         if (n > 0) pos++;
         else if (n < 0) neg++;
